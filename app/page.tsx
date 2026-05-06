@@ -1,3 +1,11 @@
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
+
 export default function Home() {
   return (
     <main>
